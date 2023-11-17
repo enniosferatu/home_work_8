@@ -29,7 +29,7 @@ i {
 
 .header {
   width: 100%;
-  height: 80vh;
+  min-height: 700px;
   background-color: rgb(245, 245, 245);
 }
 
@@ -39,12 +39,17 @@ i {
   margin: 0 auto;
 }
 
+.navbar {
+  position: relative;
+  top: 50px;
+}
+
 .navbar__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .navbar__list-item {
-  margin-top: 50px;
   position: relative;
   float: left;
 }
@@ -84,6 +89,7 @@ i {
   background-color: rgb(58, 81, 122);
   margin-left: 60px;
   margin-top: 30px;
+  margin-bottom: 40px;
   color: white;
   font-size: 1rem;
   cursor: pointer;
@@ -156,7 +162,7 @@ i {
 
 .footer {
   background-color: rgb(58, 81, 122);
-  height: 170px;
+  height: 151px;
 }
 
 .footer-section {
