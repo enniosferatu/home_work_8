@@ -6,6 +6,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-size: 20px;
+  overflow-x: hidden;
 }
 
 body {
@@ -123,6 +124,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: rgb(58, 81, 122);
   height: 250px;
 }
@@ -157,6 +159,8 @@ i {
 }
 
 .iframe {
+  width: 100%;
+  max-width: 980px;
   margin-bottom: 90px;
 }
 
