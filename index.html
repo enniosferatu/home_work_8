@@ -5,96 +5,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <Header class="header">
-    <div class="wrapper">
+    <div class="container">
       <nav class="navbar">
-        <ul class="navbar__list">
-          <li class="navbar__list-item"><a href="#">HOME</a></li>
-          <li class="navbar__list-item"><a href="#">ABOUT</a></li>
-          <li class="navbar__list-item"><a href="#">WORKS</a></li>
-          <li class="navbar__list-item"><a href="#">PROCESS</a></li>
-          <li class="navbar__list-item"><a href="#">CONTACTS</a></li>
-        </ul>
+        <ol class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">ГЛАВНАЯ</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">ОБ АВТОРЕ</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">РАБОТЫ</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">ПРОЦЕСС</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">КОНТАКТИ</a>
+          </li>
+        </ol>
       </nav>
-    </div>
-    <div class="wrapper">
-      <section class="section">
-        <h1 class="section__h1">Design</h1>
-        <p class="section_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, tempora nihil
-          necessitatibus ipsam voluptas
-          minima, asperiores quae sunt nisi repellat ea aliquid repudiandae qui numquam!</p>
-      </section>
-    </div>
-    <div class="wrapper">
-      <button class="button" type="button">WRITE ME</button>
+      <div class="content">
+        <h1 class="content__title">Дизайн и верстка</h1>
+        <p class="content__description">Lorem Ipsum - это текст-" рыба", часто используемый в печати и <br>вэб-дизайне.
+          Lorem
+          Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        <a class="content__link" href="">НАПИСАТЬ МНЕ</a>
+      </div>
     </div>
   </Header>
-  <section class="section">
-    <div class="wrapper section">
-      <h2 class="section-about__h2">About me</h2>
-      <p class="section-about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates soluta
-        porro.
-        Porro rerum debitis culpa illo quos quis sit tempora magni nam quod ea veritatis aliquam, libero, sed odit.</p>
-    </div>
-  </section>
-  <div class="section-icons">
-    <div class="wrapper section-icons">
-      <div>
-        <i class="fa-regular fa-newspaper section-icons__item" style="color: #ffffff;"></i>
-        <span class="span-num">40+</span><br>
-        <span class="span--position">projects</span>
-      </div>
-      <div>
-        <i class="fa-regular fa-newspaper section-icons__item" style="color: #ffffff;"></i>
-        <span class="span-num">40+</span><br>
-        <span class="span--position">projects</span>
-      </div>
-      <div>
-        <i class="fa-regular fa-newspaper section-icons__item" style="color: #ffffff;"></i>
-        <span class="span-num">40+</span><br>
-        <span class="span--position">projects</span>
-      </div>
-      <div>
-        <i class="fa-regular fa-newspaper section-icons__item" style="color: #ffffff;"></i>
-        <span class="span-num">40+</span><br>
-        <span class="span--position">projects</span>
-      </div>
-      <div>
-        <i class="fa-regular fa-newspaper section-icons__item" style="color: #ffffff;"></i>
-        <span class="span-num">40+</span><br>
-        <span class="span--position">projects</span>
-      </div>
-      <div>
-        <i class="fa-regular fa-newspaper section-icons__item" style="color: #ffffff;"></i>
-        <span class="span-num">40+</span><br>
-        <span class="span--position">projects</span>
-      </div>
-    </div>
-  </div>
-  <section class="section">
-    <div class="wrapper section--center">
-      <h2 class="section-about__h2">How Do I Work</h2>
-      <p class="section-about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla voluptates soluta
-        porro.
-        Porro rerum debitis culpa illo quos quis sit tempora magni nam quod ea veritatis aliquam, libero, sed odit.</p>
+  <main>
 
-      <iframe class="iframe" width="980" height="615"
-        src="https://www.youtube.com/embed/hBAVX1oslEM?si=NPYxpcMQsc8ZmIq9" title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+    <section class="about section">
+      <div class="container container--sm">
+        <h2 class="about__title section__title">Обо мне</h2>
+        <p class="about__description section__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+          вэб-дизайне. Lorem
+          Ipsum
+          является стандартной
+          "рыбой" для текстов на латинице с начала XVI века.</p>
+      </div>
+    </section>
 
-    </div>
-  </section>
+    <section class="experience">
+      <div class="container">
+        <h2 class="experience_title visually-hidden">My experience</h2>
+        <div class=" experience__container">
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/img/project.svg" alt="">
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/img/project.svg" alt="">
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/img/project.svg" alt="">
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/img/project.svg" alt="">
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/img/project.svg" alt="">
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-item__description">
+              <p class="experience-item__number">40+</p>
+              <p class="experience-item__text">проектов</p>
+            </div>
+            <div class="experience-item__image">
+              <img src="assets/img/project.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="container container--sm">
+        <h2 class="process__title section__title">Как я работаю</h2>
+        <p class="process__description section__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати
+          и вэб-дизайне.
+          Lorem
+          Ipsum
+          является стандартной
+          "рыбой" для текстов на латинице с начала XVI века.</p>
+      </div>
+    </section>
+
+    <section class="video">
+      <div class="container">
+        <h2 class="experience_title visually-hidden">My video</h2>
+        <iframe class="video__iframe" width="560" height="315"
+          src="https://www.youtube.com/embed/hBAVX1oslEM?si=mzU2A5Eq__iVPphB" title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
-    <div class="wrapper footer-section">
-      <p class="footer-section__span">Anton Suknenko</p>
-      <p class="footer-section__span--size">© 2023. All Rights Reserved.</p>
+    <div class="container">
+      <div class="footer__name">Иванов Иван</div>
+      <div class="footer__copyright">© 2018. Все права защищены.</div>
     </div>
   </footer>
 
